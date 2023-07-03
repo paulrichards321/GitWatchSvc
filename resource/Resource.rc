@@ -1,0 +1,206 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "..\include\resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 531, 174
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "GitWatch"
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,225,151,50,13
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,5,5,125,125
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 531, 174
+STYLE DS_CONTROL | WS_CHILD | DS_SETFONT
+CAPTION "GitWatch"
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,5,11,518,133
+    LTEXT           "Service Status:",IDC_STATIC,19,27,55,10
+    LTEXT           "",IDC_STATIC1,79,27,120,10
+    PUSHBUTTON      "Stop Service",IDC_BUTTON1,19,39,54,15
+    PUSHBUTTON      "Start Service",IDC_BUTTON2,76,39,54,15
+    PUSHBUTTON      "Enable",IDC_BUTTON3,211,39,60,15
+    PUSHBUTTON      "Remove Service",IDC_BUTTON4,272,39,59,15
+    LTEXT           "Service Enabled:",IDC_STATIC,211,27,64,10
+    LTEXT           "",IDC_STATIC2,272,27,120,10
+    CONTROL         "Have Service Log In As User (Required if accessing Network Drive)",IDC_CHECK1,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,70,250,10
+    EDITTEXT        IDC_EDIT1,67,84,122,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,67,101,122,13,ES_AUTOHSCROLL
+    LTEXT           "Username:",IDC_STATIC,23,86,45,10
+    LTEXT           "Password:",IDC_STATIC,23,103,45,10
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 531, 174
+STYLE DS_CONTROL | WS_CHILD | DS_SETFONT
+CAPTION "GitWatch"
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,5,11,518,133
+    COMBOBOX        IDC_COMBO1,17,40,445,56,CBS_SIMPLE | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Watch Directories:",IDC_STATIC,18,28,105,8
+    PUSHBUTTON      "Browse...",IDC_BUTTON1,466,40,50,14
+    PUSHBUTTON      "Add",IDC_BUTTON2,466,59,50,14
+    PUSHBUTTON      "Remove",IDC_BUTTON3,466,75,50,14
+    EDITTEXT        IDC_EDIT1,18,118,444,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BUTTON4,466,118,50,14
+    LTEXT           "Where to store .git folder directory: (leave blank to store in same place as watch directory(s))",IDC_STATIC,19,106,445,11
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 531, 174
+STYLE DS_CONTROL | WS_CHILD | DS_SETFONT
+CAPTION "GitWatch"
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_STATIC,5,11,518,133
+    LTEXT           "Git Status Command:",IDC_STATIC,16,28,100,14
+    EDITTEXT        IDC_EDIT2,16,39,230,14,ES_AUTOHSCROLL
+    LTEXT           "Git Commit Command:",IDC_STATIC,16,58,100,14
+    EDITTEXT        IDC_EDIT3,16,69,230,14,ES_AUTOHSCROLL
+    LTEXT           "Git Push Command:",IDC_STATIC,16,88,100,14
+    EDITTEXT        IDC_EDIT4,16,99,230,14,ES_AUTOHSCROLL
+    LTEXT           "If Git Push Success Command:",IDC_STATIC,270,28,100,14
+    EDITTEXT        IDC_EDIT5,270,39,230,14,ES_AUTOHSCROLL
+    LTEXT           "If Any Git Failure Command:",IDC_STATIC,270,58,100,14
+    EDITTEXT        IDC_EDIT6,270,69,230,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Reset",IDOK2,364,96,52,14
+    LTEXT           "Reset to Default Values:",IDC_STATIC,282,98,80,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG3 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG4 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icons\\GitWatchSmall.ico"
+
+IDI_ICON2               ICON                    "icons\\GitWatchRegular.ico"
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "..\\include\\resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        HORZGUIDE, 36
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
